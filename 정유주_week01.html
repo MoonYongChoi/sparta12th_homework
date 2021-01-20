@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                font-family: 'Stylish', sans-serif;
+            }
+
+            .red-button {
+            }
+
+            .wrap {
+                width: 500px;
+                margin: auto;
+            }
+
+            .img {
+                background-image: url('https://lifelonglearning.kr/wp-content/uploads/2019/08/1.-%E1%84%83%E1%85%A1%E1%84%89%E1%85%B5-%E1%84%8E%E1%85%A2%E1%86%A8%E1%84%8B%E1%85%B3%E1%84%85%E1%85%A9.jpg');
+                background-size: cover;
+                background-position: center;
+                width: 500px;
+                height: 300px;
+
+            }
+
+            .title {
+                margin: 10px 0;
+            }
+
+            h3, h6 {
+                display: inline;
+                margin-: 20px;
+            }
+
+            .btn-order {
+                text-align: center;
+            }
+
+            .orderList {
+                margin-top: 15px;
+            }
+
+        </style>
+
+        <script>
+            function order() {
+
+            }
+
+        </script>
+
+
+        <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    </head>
+
+    <body>
+        <div class="wrap">
+
+            <!--상품설명-->
+            <div class="img"></div>
+            <div class="title">
+                <h3 class="red-button">상품제목</h3> <h6>가격:10000원/1개!</h6>
+            </div>
+            <p>
+                인생 황혼기의 바그너가 베토벤 탄생 100주년을 앞두고
+                자신의 예술적 정신적 스승 베토벤에게 바치는 베토벤 전기.
+                단편소설 ‘베토벤 순례’, ‘교향곡 9번 해설’ 등 관련 글 5편 수록.
+                “내 머릿속에는 온통 한 가지 소원만 맴돌았다. 베토벤을 만나자!” -13쪽
+                “타락한 낙원의 황야에서 이 위대한 선구자를 칭송하자! 독일의 용기가 거둔 승리 못지않게 그를 귀하게 칭송하자. 세계의 은인은 세계의 정복자보다 더 높이 있으니!” -197쪽
+            </p>
+            <!--주문하기-->
+            <div class="title">
+                <h3>주문하기</h3>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">주문자 성함</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>---수량을 선택하세요---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2">주소</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">전화번호</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+
+            <div class="btn-order">
+                <button type="submit" class="btn btn-primary">주문하기</button>
+            </div>
+            <!--주문현황-->
+            <div class="orderList">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">이름</th>
+                        <th scope="col">수량</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">전화번호</th>
+                    </tr>
+                    </thead>
+                    <tbody id="orders-box">
+                    <tr>
+                        <td>곰돌이푸</td>
+                        <td>1</td>
+                        <td>서울시 구로구 어딘가</td>
+                        <td>010-1111-1111</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </body>
+</html>

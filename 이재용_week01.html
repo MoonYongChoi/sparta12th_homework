@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- Webpage Title -->
+        <title>JD Shopping Mall</title>
+
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+            * {
+                /*font-family: 'Do Hyeon', sans-serif;*/
+                font-family: 'East Sea Dokdo', cursive;
+            }
+
+            .wrap {
+                width: 500px;
+                margin: auto;
+            }
+
+            .img {
+                background-image: url('http://image.auction.co.kr/itemimage/1a/72/52/1a725251e6.jpg');
+                background-size: cover;
+                background-position: center;
+                width: 400px;
+                height: 500px;
+                margin: auto;
+                margin-top: 10px;
+            }
+            .info {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            h1, h5 {
+                display: inline;
+            }
+            .order {
+                text-align: center;
+            }
+            .order_end {
+                text-align: end;
+            }
+            .orders {
+                margin-top: 100px;
+            }
+            .top_space {
+                margin-top: 15px;
+            }
+        </style>
+        <script>
+            function order() {
+                alert("주문이 완료되었습니다.");
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="img"></div>
+            <div class="info">
+                <h1>Jd 스파르타 코딩클럽 굿즈</h1>
+                <div class="top_space">
+                    <div class="order_end">
+
+                        <h5>가격: 300,000,000 원 / 개</h5></div>
+                </div>
+                <div class="top_space">
+                    <h3> 우주 희귀 물질 Jd 로 만 스파르타 코딩클럽 리미티드 럭셔리 굿즈 </h3></div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">주문자 성</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-name">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" id="inputGroup-sizing-lg">수량</label>
+                    </div>
+                    <select class="custom-select" id="order-count">
+                        <option selected value=""> -- 수량을 선택하세요 --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">주소</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-address">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">전화번호</span>
+                    </div>
+                    <input type="text" class="form-control" id="order-phone">
+                </div>
+                <div class="order">
+                    <button onclick="order()" type="button" class="btn-secondary">주문하기</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
